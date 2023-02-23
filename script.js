@@ -36,6 +36,19 @@ if(playerInput == '3'){
   playerMove = 'nożyce';
 }
 
-
-
 printMessage('Twój ruch to: ' + playerMove);
+
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+  }
+
+else if(computerMove == 'nożyce' && playerMove == 'papier'){
+    printMessage('Ty przegrywasz!');
+  }
+else if(computerMove == 'kamień' && playerMove == 'kamień'){
+    printMessage('Spróbuj jeszcze raz');
+}
+else if(computerMove == 'nieznany ruch' || playerMove == 'nieznany ruch'){
+    printMessage('Podano nieprawidłową liczbę');
+}
