@@ -43,12 +43,39 @@ if( computerMove == 'kamień' && playerMove == 'papier'){
     printMessage('Ty wygrywasz!');
   }
 
+if( computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+  }
+
+if( computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+  }
+
+
 else if(computerMove == 'nożyce' && playerMove == 'papier'){
     printMessage('Ty przegrywasz!');
   }
+
+else if(computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Ty przegrywasz!');
+  }
+
+else if(computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Ty przegrywasz!');
+  }
+
 else if(computerMove == 'kamień' && playerMove == 'kamień'){
     printMessage('Spróbuj jeszcze raz');
 }
+
+else if(computerMove == 'papier' && playerMove == 'papier'){
+    printMessage('Spróbuj jeszcze raz');
+}
+
+else if(computerMove == 'nożyce' && playerMove == 'nożyce'){
+    printMessage('Spróbuj jeszcze raz');
+}
+
 else if(computerMove == 'nieznany ruch' || playerMove == 'nieznany ruch'){
     printMessage('Podano nieprawidłową liczbę');
 }
